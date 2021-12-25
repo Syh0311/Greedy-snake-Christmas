@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#main {
+  position: relative;
+
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: antiquewhite;
+}
+
+#playBox {
+  flex: 2;
+  margin: 2vh, 2vw;
+
+  background-color: azure;
+}
+
+#infoBox {
+  flex: 1;
+  margin: 2vh, 2vw;
+
+  background-color: cadetblue;
+}
+
+#infoBox span {
+  font-size: 10vw;
+}
+
+.christmas-tree {
+  background-image: url(../images/ChristmasTree.png);
+  background-size: contain;
+  filter: contrast(50%);
+  background-color: rgba(225, 0, 255, 0.2);
+}
+
+.head {
+  background-image: url(../images/ChristmasTree.png);
+  background-size: contain;
+  filter: contrast(200%);
+  background-color: rgba(0, 255, 1, 0.3);
+}
