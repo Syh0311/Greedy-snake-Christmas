@@ -1,5 +1,6 @@
 (function flexible(window, document) {
   var docEl = document.documentElement;
+  // var docEl = document.querySelector("#playBox");
   var dpr = window.devicePixelRatio || 1;
 
   // adjust body font size
@@ -14,7 +15,7 @@
 
   // set 1rem = viewWidth / 10
   function setRemUnit() {
-    var rem = docEl.clientWidth / 10;
+    var rem = docEl.clientWidth / 125;
     docEl.style.fontSize = rem + "px";
   }
 

@@ -4,21 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- <link rel="icon" href="<%= BASE_URL %>ChristmasTree.ico" /> -->
+    <title>圣诞快乐~</title>
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <div id="main">
-      <div id="playBox"></div>
+      <div id="playBox">
+        <!-- <div id="playBox"></div> -->
+      </div>
       <div id="infoBox">
-        <span>name:</span>
+        <h2>
+          Score:
+          <div id="score"></div>
+        </h2>
+        <br />
+        <h2>当前速度</h2>
       </div>
     </div>
     <script src="./js/common.js"></script>
     <script src="./js/food.js"></script>
     <script src="./js/snake.js"></script>
     <script src="./js/game.js"></script>
-    <!-- <script src="./js/flexible.js"></script> -->
+    <script src="./js/flexible.js"></script>
     <script>
       let a = 10;
       function ss() {

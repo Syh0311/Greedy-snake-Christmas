@@ -9,15 +9,31 @@
   width: 100vw;
   height: 100vh;
 
-  background-color: antiquewhite;
+  background-color: rgb(183, 212, 203);
 }
 
 #playBox {
-  flex: 2;
-  margin: 2vh, 2vw;
+  flex: 4;
+  /* margin: 2vh, 2vw; */
+  position: relative;
 
-  background-color: azure;
+  /* background-color: rgb(83, 145, 145); */
+  background-color: rgb(183, 212, 203);
+  box-shadow: inset 0 0 3rem black;
+  border-radius: 3px;
 }
+
+/* #playBox {
+  position: relative;
+
+  height: 90vh;
+  width: 100vh;
+  top: 5vh;
+  left: 10vh;
+
+  background-color: rgb(183, 212, 203);
+  box-shadow: 0 0 3rem black;
+} */
 
 #infoBox {
   flex: 1;
@@ -27,7 +43,7 @@
 }
 
 #infoBox span {
-  font-size: 10vw;
+  font-size: 1rem;
 }
 
 .christmas-tree {

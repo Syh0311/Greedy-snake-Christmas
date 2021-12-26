@@ -34,7 +34,9 @@
     this.level = options.level || 1;
 
     this.body = [
-      { x: 3, y: 3, color: "red" },
+      { x: 5, y: 3, color: "red" },
+      { x: 4, y: 3, color: "blue" },
+      { x: 3, y: 3, color: "blue" },
       { x: 2, y: 3, color: "blue" },
       { x: 1, y: 3, color: "blue" },
     ];
@@ -59,15 +61,17 @@
         chunk.style.position = snakeOptions.position;
         chunk.style.width = this.size + "px";
         chunk.style.height = this.size + "px";
-        chunk.style.bottom = el.y * this.size + "px";
+        chunk.style.top = el.y * this.size + "px";
         chunk.style.left = el.x * this.size + "px";
+        chunk.style.borderRadius = "50%";
       } else {
         chunk.classList.add("christmas-tree");
         chunk.style.position = snakeOptions.position;
         chunk.style.width = this.size + "px";
         chunk.style.height = this.size + "px";
-        chunk.style.bottom = el.y * this.size + "px";
+        chunk.style.top = el.y * this.size + "px";
         chunk.style.left = el.x * this.size + "px";
+        chunk.style.borderRadius = "50%";
         // chunk.style.backgroundColor = el.color;
       }
 
@@ -87,6 +91,7 @@
     }
     // 1.2 head移动
     let head = this.body[0];
+    // console.log(head.x);
     switch (this.orientation) {
       // switch需要加break！！！
       case "left":
@@ -96,10 +101,10 @@
         head.x += 1;
         break;
       case "up":
-        head.y += 1;
+        head.y -= 1;
         break;
       case "down":
-        head.y -= 1;
+        head.y += 1;
         break;
       default:
         break;
